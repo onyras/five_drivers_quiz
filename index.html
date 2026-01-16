@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 5 Drivers Quiz | Nikolas Konstantin</title>
+    <link rel="icon" type="image/png" href="nk_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -12,6 +13,51 @@
 <body>
     <!-- Intro Screen -->
     <section id="intro" class="screen active">
+        <!-- Other Tests Dropdown -->
+        <div class="other-tests-dropdown">
+            <button class="dropdown-trigger" onclick="toggleDropdown()">
+                Other Tests
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="https://ceotest.nikolaskonstantin.com" target="_blank" class="dropdown-item">
+                    <span class="dropdown-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </span>
+                    <span class="dropdown-text">
+                        <strong>CEO Test</strong>
+                        <small>Assess your leadership readiness</small>
+                    </span>
+                </a>
+                <a href="https://mindset.nikolaskonstantin.com" target="_blank" class="dropdown-item">
+                    <span class="dropdown-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </span>
+                    <span class="dropdown-text">
+                        <strong>Mindset Culture Test</strong>
+                        <small>Discover your organization's mindset</small>
+                    </span>
+                </a>
+                <a href="https://annualreview.nikolaskonstantin.com" target="_blank" class="dropdown-item">
+                    <span class="dropdown-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </span>
+                    <span class="dropdown-text">
+                        <strong>Annual Review</strong>
+                        <small>Reflect on your year</small>
+                    </span>
+                </a>
+            </div>
+        </div>
+
         <div class="container intro-centered">
             <!-- Driver Icons Preview -->
             <div class="intro-visual">
@@ -277,6 +323,46 @@
                     <h3>Want to Go Deeper?</h3>
                     <p>Understanding your drivers is the first step. Working with them consciously is the journey. Book a conversation to explore how your drivers are showing up in your leadership and how to harness them more effectively.</p>
                     <a href="https://calendly.com/nikolaskonstantin/1-on-1-conversation" target="_blank" class="btn btn-primary">Book a Conversation</a>
+                </div>
+
+                <!-- Other Tests Bento -->
+                <div class="other-tests-bento">
+                    <h4>Explore More Assessments</h4>
+                    <div class="bento-grid">
+                        <a href="https://ceotest.nikolaskonstantin.com" target="_blank" class="bento-card">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <div class="bento-content">
+                                <strong>CEO Test</strong>
+                                <p>Assess your leadership readiness</p>
+                            </div>
+                        </a>
+                        <a href="https://mindset.nikolaskonstantin.com" target="_blank" class="bento-card">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="bento-content">
+                                <strong>Mindset Culture Test</strong>
+                                <p>Discover your organization's mindset</p>
+                            </div>
+                        </a>
+                        <a href="https://annualreview.nikolaskonstantin.com" target="_blank" class="bento-card">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="bento-content">
+                                <strong>Annual Review</strong>
+                                <p>Reflect on your year</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
